@@ -105,3 +105,11 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
     left: 50%;
     transform: translate(-50%) rotate(135deg);
 }
+
+button{
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(55, 0, 255);
+}

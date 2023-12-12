@@ -49,6 +49,19 @@ createApp({
        },
        selectImage(index){
         this.activeImage=index;
+       },
+       startScrolling(){
+          this.autoscroll = setInterval(() => {
+              this.nextImage()
+          },3000)
+       },
+       pauseScrolling(){
+          clearInterval(this.autoscroll);
+          this.autoscroll=null;
+       },
+       stopScrolling(){
+          this.pauseScrolling();
+          this.activeImage=0;
        }
     }
 }).mount('#app');

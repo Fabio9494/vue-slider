@@ -34,8 +34,10 @@
                     :class="activeImage===index ? 'active' : ''"
                     @click="selectImage(index)">
                 </div>
-
             </div>
+            <button @click="startScrolling()">play</button>
+            <button @click="pauseScrolling()">pause</button>
+            <button @click="stopScrolling()">stop</button>
         </div>
 
     </div>
